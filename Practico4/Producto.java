@@ -3,66 +3,66 @@ package Practico5;
 public class Producto {
 
 
-
     private String nombre;
     private int codigo;
     private boolean importado;
     private String nroLote;
     private int nroProducto;
 
-    private static int CONTADORPRODUCTO = 1;
+    private static int CONTADOR_PRODUCTO = 1;
     private int identificadorProducto;
 
-    public Producto(){
+    public Producto() {
         this.nombre = "Desconocido";
         this.codigo = 0;
         this.importado = false;
         this.nroLote = "Desconocido";
         this.nroProducto = 0;
-        CONTADORPRODUCTO++;
-        this.identificadorProducto = CONTADORPRODUCTO;
+        CONTADOR_PRODUCTO++;
+        this.identificadorProducto = CONTADOR_PRODUCTO;
 
     }
 
 
-    public Producto(String unNombre){
-        this.nombre= unNombre;
+    public Producto(String unNombre) {
+        this.nombre = unNombre;
         this.codigo = 0;
         this.importado = false;
         this.nroLote = "Desconocido";
         this.nroProducto = 0;
-        CONTADORPRODUCTO++;
-        this.identificadorProducto = CONTADORPRODUCTO;
+        CONTADOR_PRODUCTO++;
+        this.identificadorProducto = CONTADOR_PRODUCTO;
 
     }
 
-    public Producto(int unCodigo){
-        this.nombre= "Desconocido";
+    public Producto(int unCodigo) {
+        this.nombre = "Desconocido";
         this.codigo = unCodigo;
         this.importado = false;
         this.nroLote = "Desconocido";
         this.nroProducto = 0;
-        CONTADORPRODUCTO++;
-        this.identificadorProducto = CONTADORPRODUCTO;
+        CONTADOR_PRODUCTO++;
+        this.identificadorProducto = CONTADOR_PRODUCTO;
     }
 
-    public Producto(String unNombre, int unCodigo){
+    public Producto(String unNombre, int unCodigo) {
         this.nombre = unNombre;
         this.codigo = unCodigo;
         this.importado = false;
         this.nroLote = "Desconocido";
         this.nroProducto = 0;
-        CONTADORPRODUCTO++;
-        this.identificadorProducto = CONTADORPRODUCTO;
+        CONTADOR_PRODUCTO++;
+        this.identificadorProducto = CONTADOR_PRODUCTO;
     }
-    public Producto(String unNombre , int unCodigo , String unnroLote , int unNroProducto ) {
+
+    public Producto(String unNombre, int unCodigo, String unnroLote, int unNroProducto) {
         this.nombre = unNombre;
         this.codigo = unCodigo;
         this.nroLote = unnroLote;
         this.nroProducto = unNroProducto;
         this.importado = false;
-        CONTADORPRODUCTO++;
-        this.identificadorProducto = CONTADORPRODUCTO;
+        CONTADOR_PRODUCTO++;
+        this.identificadorProducto = CONTADOR_PRODUCTO;
 
     }
 
@@ -106,16 +106,16 @@ public class Producto {
         this.nroProducto = nroProducto;
     }
 
-    public String toString(){
+    public String toString() {
         String retorno = "";
-        retorno = "producto nro " + identificadorProducto +" Nombre: " + this.getNombre() + " Codigo " + this.getCodigo() + " Numero de Lote " + this.getNroLote()
+        retorno = "producto nro " + identificadorProducto + " Nombre: " + this.getNombre() + " Codigo " + this.getCodigo() + " Numero de Lote " + this.getNroLote()
                 + " Numero de Producto " + this.getNroProducto();
 
 
-        if(this.importado == false){
+        if (this.importado == false) {
             retorno += " Es Nacional";
-        } else{
-           retorno += (" Es Importado");
+        } else {
+            retorno += (" Es Importado");
         }
 
 

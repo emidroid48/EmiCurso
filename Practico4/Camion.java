@@ -5,7 +5,7 @@ public class Camion {
     private int chapa;
     private String color;
     private int año;
-    private static int CONTADORCAMIONES = 1000;
+    private static int CONTADOR_CAMIONES = 1000;
     private int identificadorCamion;
 
 
@@ -17,8 +17,8 @@ public class Camion {
         this.chapa = 100000;
         this.color = "Negro";
         this.año = 2020;
-        CONTADORCAMIONES++;
-        this.identificadorCamion = CONTADORCAMIONES;
+        CONTADOR_CAMIONES++;
+        this.identificadorCamion = CONTADOR_CAMIONES;
     }
 
     public Camion(int unaChapa){
@@ -27,8 +27,8 @@ public class Camion {
         } else {
             this.chapa = unaChapa;
         }
-        CONTADORCAMIONES++;
-        this.identificadorCamion = CONTADORCAMIONES;
+        CONTADOR_CAMIONES++;
+        this.identificadorCamion = CONTADOR_CAMIONES;
         this.año = 2020;
         this.color = "Rojo";
     }
@@ -37,8 +37,8 @@ public class Camion {
         this.año = 2020;
         this.chapa = 1000;
         this.color = unColor;
-        CONTADORCAMIONES++;
-        this.identificadorCamion = CONTADORCAMIONES;
+        CONTADOR_CAMIONES++;
+        this.identificadorCamion = CONTADOR_CAMIONES;
     }
 
     public Camion(int unaChapa, String unColor) {
@@ -49,8 +49,8 @@ public class Camion {
         }
         this.año = 2020;
         this.color = unColor;
-        CONTADORCAMIONES++;
-        this.identificadorCamion = CONTADORCAMIONES;
+        CONTADOR_CAMIONES++;
+        this.identificadorCamion = CONTADOR_CAMIONES;
     }
 
     //metodos...
